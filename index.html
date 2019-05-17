@@ -1,37 +1,36 @@
 <html>
-<head>
-	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common.min.css" />
-	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.default.min.css" />
+  <head>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.default.min.css" />
 
-	<script src="https://kendo.cdn.telerik.com/2019.2.514/js/jquery.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/2019.2.514/js/jszip.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/2019.2.514/js/kendo.all.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/2019.2.514/js/pako_deflate.min.js"></script>
-</head>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.514/js/pako_deflate.min.js"></script>
+  </head>
 
-<body>
-		<textarea id="editor">
-        <h1 class='test'>Initial value</h1>
+  <body>
+    <textarea id="editor">
+      <h1 class='test'>Initial value</h1>
     </textarea>
     <script>
-        $(document).ready(function() {
-            // create Editor from textarea HTML element with default set of tools
-            $("#editor").kendoEditor({
-                tools: ["pdf"],
-                stylesheets: ["./style.css"],
-                pdf: {
-                    fileName: "NewDocument.pdf",
-                    proxyURL: "https://demos.telerik.com/kendo-ui/service/export",
-                    paperSize: "a4",
-                    margin: {
-                        bottom: 20,
-                        left: 20,
-                        right: 20,
-                        top: 20
-                    }
-                }
-            });
+      $(document).ready(function() {
+        // create Editor from textarea HTML element with default set of tools
+        $("#editor").kendoEditor({
+          tools: ["pdf"],
+          stylesheets: ["./style.css"],
+          pdf: {
+            fileName: "NewDocument.pdf",
+            paperSize: "a4",
+            margin: {
+              bottom: 20,
+              left: 20,
+              right: 20,
+              top: 20
+            }
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>
