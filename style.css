@@ -1,3 +1,10 @@
-h1, h2 {
-  font-family: Lato;
+@font-face {
+    font-family: "MySegoe UI";
+    src: url("/fonts/SEGOEUI.TTF") format("truetype");
+}
+
+
+h1 {
+    color: red;
+    font-family: "MySegoe UI";
 }
