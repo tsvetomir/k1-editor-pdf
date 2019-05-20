@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common.min.css" />
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <script src="https://kendo.cdn.telerik.com/2019.2.514/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2019.2.514/js/jszip.min.js"></script>
@@ -11,9 +12,15 @@
 
   <body>
     <textarea id="editor">
-      <h1 class='test'>Initial value</h1>
+      <h1>Heading №1</h1>
+      <p>Paragraph</p>
     </textarea>
     <script>
+      kendo.pdf.defineFont({
+        "DejaVu Sans": "http://kendo.cdn.telerik.com/2019.2.514/styles/fonts/DejaVu/DejaVuSans.ttf",
+        "DejaVu Sans|Bold": "http://kendo.cdn.telerik.com/2019.2.514/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
+      });
+
       $(document).ready(function() {
         // create Editor from textarea HTML element with default set of tools
         $("#editor").kendoEditor({

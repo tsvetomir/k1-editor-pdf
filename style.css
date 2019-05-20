@@ -1,10 +1,16 @@
 @font-face {
-    font-family: "Stencil";
-    src: url("/fonts/Stencil.ttf") format("truetype");
+    font-family: "DejaVu Sans";
+    src: url("http://kendo.cdn.telerik.com/2019.2.514/styles/fonts/DejaVu/DejaVuSans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DejaVu Sans";
+    font-weight: bold;
+    src: url("http://kendo.cdn.telerik.com/2019.2.514/styles/fonts/DejaVu/DejaVuSans-Bold.ttf") format("truetype");
 }
 
 h1 {
     color: red;
-    font-family: "Stencil";
+    font-family: "DejaVu Sans";
 }
 
